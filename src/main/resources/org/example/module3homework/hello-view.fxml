@@ -1,16 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="org.example.module3homework.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+<VBox alignment="CENTER" prefHeight="299.0" prefWidth="345.0" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.module3homework.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <HBox prefHeight="21.0" prefWidth="305.0">
+      <children>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Annual Interest Rate: ">
+            <HBox.margin>
+               <Insets />
+            </HBox.margin>
+         </Text>
+         <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+         <TextField minWidth="100.0">
+            <HBox.margin>
+               <Insets />
+            </HBox.margin>
+         </TextField>
+      </children>
+   </HBox>
+   <HBox prefHeight="21.0" prefWidth="305.0">
+      <children>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Years: ">
+            <HBox.margin>
+               <Insets />
+            </HBox.margin>
+         </Text>
+         <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+         <TextField minWidth="100.0">
+            <HBox.margin>
+               <Insets />
+            </HBox.margin>
+         </TextField>
+      </children>
+   </HBox>
+   <HBox prefHeight="21.0" prefWidth="305.0">
+      <children>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Loan Amount: ">
+            <HBox.margin>
+               <Insets />
+            </HBox.margin>
+         </Text>
+         <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+         <TextField minWidth="100.0">
+            <HBox.margin>
+               <Insets />
+            </HBox.margin>
+         </TextField>
+      </children>
+   </HBox>
+   <HBox prefHeight="21.0" prefWidth="305.0">
+      <children>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Monthly Payment: ">
+            <HBox.margin>
+               <Insets />
+            </HBox.margin>
+         </Text>
+         <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      </children>
+   </HBox>
+   <HBox prefHeight="21.0" prefWidth="305.0">
+      <children>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Total Payment: ">
+            <HBox.margin>
+               <Insets />
+            </HBox.margin>
+         </Text>
+         <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+            <HBox.margin>
+               <Insets left="20.0" />
+            </HBox.margin>
+         </Text>
+      </children>
+   </HBox>
+    <Button onAction="#onHelloButtonClick" text="Calculate" />
 </VBox>
